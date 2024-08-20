@@ -1,0 +1,28 @@
+@baseUrl = https://8080-felipeferre-exercicioau-k3cndpz8h9t.ws-us115.gitpod.io
+
+###
+GET {{baseUrl}}/tarefas
+
+###
+POST {{baseUrl}}/tarefas
+Content-Type: application/json
+
+{
+    "descricao": "Estudar Spring Boot",
+    "concluida": false
+}
+
+###
+GET {{baseUrl}}/tarefas/2
+
+###
+PUT {{baseUrl}}/tarefas/2
+Content-Type: application/json
+
+{
+    "descricao": "Estudar Spring Boot e JPA",
+    "concluida": true
+}
+
+###
+DELETE {{baseUrl}}/tarefas/1
